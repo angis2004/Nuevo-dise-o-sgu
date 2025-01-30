@@ -7,13 +7,18 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+
+  isDarkMode: boolean = false;
+
   /***dark */
-  toggleDarkMode(event: Event): void {
-    console.log('Modo oscuro activado/desactivado');
-    const body = document.body;  
-    body.classList.toggle('dark-mode'); 
-    const circulo = document.querySelector('.circulo') as HTMLElement;  
-    circulo?.classList.toggle('prendido');
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+    document.body.classList.toggle("dark-mode");
+
+    const circulo = document.querySelector(".circulo");
+    if (circulo) {
+      circulo.classList.toggle("prendido");
+    }
   }
 
 
