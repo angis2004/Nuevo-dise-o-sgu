@@ -1,0 +1,19 @@
+
+body{
+    background-color: #EFF5F9;
+}
+
+:root {
+    --color-list:#48798E;
+    --color-texto : #0000;
+    --color-texto2: #ffff;
+    --hover-sidebar: #0E485C;
+
+}
+
+.dark-mode{
+    --color-list: rgb(44,45,49);
+    --color-texto : #0000;
+    --color-texto2: #ffff;
+    --hover-sidebar: #333333;
+}

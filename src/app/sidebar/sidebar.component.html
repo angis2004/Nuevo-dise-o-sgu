@@ -1,0 +1,131 @@
+
+<div class="menu">
+    <img src="assets/svg/icon_arrow.svg" alt="" class="list_img" />
+</div>
+
+
+<nav class="nav">
+    <ul class="list mini-list">
+      <div class="nombre-pagina">
+
+
+        <img src="assets/svg/grid.svg"   id="cloud" name="cloud-outline"
+        (click)="toggleMiniList()"
+        />
+        <span>UMC</span>
+      </div>
+
+
+      <li class="list_item list_item-click">
+        <div class="list_button list_button-click"
+        (click)="toggleList($event)"
+        >
+          <!-- <img src="assets/svg/mantenimiento.svg"  alt="" class="list_img" /> -->
+
+          <mat-icon svgIcon="mantenimiento" class="list_img" ></mat-icon>
+          <a href="#" class="nav_link"> Mantenimiento</a>
+          <!-- <mat-icon class="icon-list" svgIcon="icon_arrow"class="list_arrow" ></mat-icon> -->
+          <mat-icon class="icon-list list_arrow" svgIcon="icon_arrow"></mat-icon>
+
+          <!-- <div class="icon-list" src="assets/svg/icon_arrow.svg" class="list_arrow"></div> -->
+        </div>
+  
+        <ul class="list_show">
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Opciones</a>
+          </li>
+  
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Usuarios</a>
+          </li>
+  
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Sistemas</a>
+          </li>
+  
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Rol </a>
+          </li>
+  
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Jefatura</a>
+          </li>
+        </ul>
+      </li>
+  
+      <li class="list_item list_item-click">
+        <div class="list_button list_button-click"
+        (click)="toggleList($event)"
+        >
+          <!-- <img src="assets/svg/consultar.svg" alt="" class="list_img" /> -->
+          <mat-icon svgIcon="consultar" class="list_img" ></mat-icon>
+          <a href="#" class="nav_link"> Consultas</a>
+          <mat-icon class="icon-list list_arrow" svgIcon="icon_arrow"></mat-icon>
+          <!-- <div class="icon-list" src="assets/svg/icon_arrow.svg" class="list_arrow"></div> -->
+
+        </div>
+  
+        <ul class="list_show">
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Perfil de Usuario</a>
+          </li>
+        </ul>
+      </li>
+  
+      <li class="list_item list_item-click">
+        <div class="list_button list_button-click"
+        (click)="toggleList($event)"
+        >
+          <!-- <img src="assets/svg/reporte.svg" alt="" class="list_img" /> -->
+          <mat-icon svgIcon="reporte" class="list_img" ></mat-icon>
+          <a href="#" class="nav_link"> Reportes</a> 
+
+          <mat-icon class="icon-list list_arrow" svgIcon="icon_arrow"></mat-icon>
+          <!-- <img src="assets/svg/icon_arrow.svg" class="list_arrow" /> -->
+        </div>
+  
+        <ul class="list_show">
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Usuarios por Sistema</a>
+          </li>
+        </ul>
+      </li>
+
+      <div class="linea"></div>
+
+ <div class="modo-oscuro">
+  <div class="info">
+    <mat-icon svgIcon="dark_mode" class="list_arrow"></mat-icon>
+    <!-- <img src="assets/svg/dark_mode.svg" class="list_arrow" />  -->
+    <span>Dark Mode</span>
+  </div>
+  <div class="switch"   (click)="toggleList($event)">
+    <div class="base">
+    <div class="circulo">
+    </div>
+    </div>
+  </div>
+ </div>
+
+
+ <div class="usuario">
+  <img src="assets/img/user.png"/>
+  <div class="info-usuario">
+     <div class="container-datos">
+    <span class="nombre">Angis</span>
+    <span class="area-usuario">T.I</span>
+  </div>
+   <!-- icon ellipsis -->
+   <!-- <img class="icon-list" src="assets/svg/ellipsis_vertical_solid.svg" /> -->
+ <!-- <div class="icon-list" src="assets/svg/ellipsis_vertical_solid.svg"> -->
+  <mat-icon svgIcon="ellipsis_vertical_solid" ></mat-icon>
+ <i> <mat-icon svgIcon="icon_pwd_on"></mat-icon></i>
+
+</div>
+
+</div>
+
+    </ul>
+  </nav>
+  
+  
