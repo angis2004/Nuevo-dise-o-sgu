@@ -50,10 +50,18 @@
 .list > div:nth-child(2),
 .list > div:nth-child(3){
     /* border: 2px solid red; */
+    margin-bottom: 10px;
 }
 .list > div:nth-child(1){
     margin-bottom: 30px;
 }
+
+
+.list > div:nth-child(2){
+    /* border: 1px solid rgb(7, 30, 160); */
+    margin-bottom: 10px;
+}
+
 
 .nav_link{
 /*SPAN-TITLE-SUBMENU*/
@@ -79,7 +87,7 @@
 
 /*ICONS DE LA NAVEGACION */
 .navegacion .list .list_img{
-    /* border:2px solid blue; */
+    border:2px solid blue;
     min-width: 50px;
     font-size: 20px;
 }
@@ -177,13 +185,6 @@ background: #303030;
    opacity: 0;
   
 }
-
-.list img{
-/* border: 2px solid blue; */
-min-width: 50px;
-font-size: 20px;
-}
-
 
 .list_item{
     list-style: none;
@@ -320,41 +321,80 @@ font-size: 20px;
 
  /**USER*/
 
- .list .usuario{
-    
-    width: 100%;
+
+ .usuario{
+    /* border: 2px solid red; */
     display: flex;
+    overflow: hidden;
+    margin-top: 1rem;
  }
 
- .list .usuario img{
-    width: 50px;
-    min-width: 50px;
-    border-radius: 10px;
+ .usuario-img{
+   display: flex;
+   margin: 0 0.7rem 0 0.35rem;
+ }
+
+.usuario-img img{
+    width: 2.2rem;
+    /* height: 2.2rem;
+    object-fit: cover;
+    border-radius: 50%; */
+}
+
+.info-usuario{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+
+    /*width:100%*/
+    /* align-items: center;
+    justify-content: space-between; */
+    color: var(--color-texto2);
+    /* overflow: hidden; */
+ }
+
+ .info-usuario .nombre{
+
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-texto2);
+
+ }
+
+ .info-usuario .area-usuario{
+
+    font-size: 0.7rem;
  }
 
 
- .list .usuario .info-usuario{
-    
-    width: 100%;
+ .usuario-icon{
+    margin-left: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    color: var(--color-texto2);
-    overflow: hidden;
+    justify-content: center;
  }
 
+ /*USER 2*/
+ /* .list .usuario{
+    
+    width: 100%;
+    display: flex;
+ } */
 
- .list .usuario .icon-list{
-    width: 50px;
-    min-width: 50px;
+
+
+ /* .list .usuario .usuario-icon{
+    width: 40px;
+    min-width: 40%;
     border-radius: 10px;
-    background: red;
-    height: 50px;
- }
+    /* background: red; */
+    /* height: 40px;
+ } */
+
 
  
- 
- .list .usuario .container-datos{
+ /* .list .usuario .container-datos{
     
     width: 100%;
     display: flex;
@@ -370,7 +410,7 @@ font-size: 20px;
 
  .list .usuario .area-usuario{
     font-size: 13px;
- }
+ } */
 
 
  /*NOMBREEMAIL = container-datos

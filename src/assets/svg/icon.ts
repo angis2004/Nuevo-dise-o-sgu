@@ -7,6 +7,7 @@ export enum Icons{
     light_mode,
     wrench_solid,
     mantenimiento,
-    reporte
+    reporte,
+    exit_door
     
 }

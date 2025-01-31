@@ -1,5 +1,8 @@
 
 <!-- <app-login></app-login> -->
 <app-sidebar></app-sidebar>
-<app-principal></app-principal>  
+<app-principal [(sidebar)]="sidebar" ></app-principal>  
 <router-outlet></router-outlet>git branch
+
+
+<!-- [sidebar]="sidebar" (sidebarChange)="sidebar = $event" -->

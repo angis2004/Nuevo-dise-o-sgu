@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter,Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-principal',
@@ -7,7 +7,15 @@ import { Component } from '@angular/core';
 })
 export class PrincipalComponent {
   
+  @Input() sidebar?: string;
 
-  
+  @Output() sidebarChange = new EventEmitter<string>();
+
+  emitTiTleChange(){
+    this.sidebarChange.emit(this.sidebar);
+    console.log(this.sidebar)
+    //DISPARAR UN OBJETO
+  }
+
 }
 

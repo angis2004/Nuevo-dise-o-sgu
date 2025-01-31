@@ -11,6 +11,7 @@ import {Breadcrumb, BreadcrumbService} from "angular-crumbs";
 })
 export class AppComponent  implements OnInit{
   title = 'umc';//custom icon
+sidebar: string|undefined;
 
 constructor(
  // private titleService : Title,

@@ -13,103 +13,114 @@
       <span>UMC</span>
     </div>
 
-
     <div class="contenedor-item">
-    <li class="list_item list_item-click">
-      <div class="list_button list_button-click" (click)="toggleList($event)">
-        <mat-icon svgIcon="mantenimiento" class="list_img"></mat-icon>
-        <a href="#" class="nav_link"> Mantenimiento</a>
-        <!-- <mat-icon class="icon-list" svgIcon="icon_arrow"class="list_arrow" ></mat-icon> -->
-        <mat-icon class="icon-list list_arrow" svgIcon="icon_arrow"></mat-icon>
+      <li class="list_item list_item-click">
+        <div class="list_button list_button-click" (click)="toggleList($event)">
+          <mat-icon svgIcon="mantenimiento" class="list_img"></mat-icon>
+          <a href="#" class="nav_link"> Mantenimiento</a>
+          <!-- <mat-icon class="icon-list" svgIcon="icon_arrow"class="list_arrow" ></mat-icon> -->
+          <mat-icon
+            class="icon-list list_arrow"
+            svgIcon="icon_arrow"
+          ></mat-icon>
 
-        <!-- <div class="icon-list" src="assets/svg/icon_arrow.svg" class="list_arrow"></div> -->
-      </div>
+          <!-- <div class="icon-list" src="assets/svg/icon_arrow.svg" class="list_arrow"></div> -->
+        </div>
 
-      <ul class="list_show">
-        <li class="list_inside">
-          <a href="#" class="nav_link nav_link-inside">Opciones</a>
-        </li>
+        <ul class="list_show">
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Opciones</a>
+          </li>
 
-        <li class="list_inside">
-          <a href="#" class="nav_link nav_link-inside">Usuarios</a>
-        </li>
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Usuarios</a>
+          </li>
 
-        <li class="list_inside">
-          <a href="#" class="nav_link nav_link-inside">Sistemas</a>
-        </li>
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Sistemas</a>
+          </li>
 
-        <li class="list_inside">
-          <a href="#" class="nav_link nav_link-inside">Rol </a>
-        </li>
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Rol </a>
+          </li>
 
-        <li class="list_inside">
-          <a href="#" class="nav_link nav_link-inside">Jefatura</a>
-        </li>
-      </ul>
-    </li>
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Jefatura</a>
+          </li>
+        </ul>
+      </li>
 
-    <li class="list_item list_item-click">
-      <div class="list_button list_button-click" (click)="toggleList($event)">
-        <mat-icon svgIcon="consultar" class="list_img"></mat-icon>
-        <a href="#" class="nav_link"> Consultas</a>
-        <mat-icon class="icon-list list_arrow" svgIcon="icon_arrow"></mat-icon>
-      </div>
+      <li class="list_item list_item-click">
+        <div class="list_button list_button-click" (click)="toggleList($event)">
+          <mat-icon svgIcon="consultar" class="list_img"></mat-icon>
+          <a href="#" class="nav_link"> Consultas</a>
+          <mat-icon
+            class="icon-list list_arrow"
+            svgIcon="icon_arrow"
+          ></mat-icon>
+        </div>
 
-      <ul class="list_show">
-        <li class="list_inside">
-          <a href="#" class="nav_link nav_link-inside">Perfil de Usuario</a>
-        </li>
-      </ul>
-    </li>
+        <ul class="list_show">
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside">Perfil de Usuario</a>
+          </li>
+        </ul>
+      </li>
 
-    <li class="list_item list_item-click">
-      <div class="list_button list_button-click" (click)="toggleList($event)">
-        <!-- <img src="assets/svg/reporte.svg" alt="" class="list_img" /> -->
-        <mat-icon svgIcon="reporte" class="list_img"></mat-icon>
-        <a href="#" class="nav_link"> Reportes</a>
+      <li class="list_item list_item-click">
+        <div class="list_button list_button-click" (click)="toggleList($event)">
+          <!-- <img src="assets/svg/reporte.svg" alt="" class="list_img" /> -->
+          <mat-icon svgIcon="reporte" class="list_img"></mat-icon>
+          <a href="#" class="nav_link"> Reportes</a>
 
-        <mat-icon class="icon-list list_arrow" svgIcon="icon_arrow"></mat-icon>
-        <!-- <img src="assets/svg/icon_arrow.svg" class="list_arrow" /> -->
-      </div>
+          <mat-icon
+            class="icon-list list_arrow"
+            svgIcon="icon_arrow"
+          ></mat-icon>
+          <!-- <img src="assets/svg/icon_arrow.svg" class="list_arrow" /> -->
+        </div>
 
-      <ul class="list_show">
-        <li class="list_inside">
-          <a href="#" class="nav_link nav_link-inside">Usuarios por Sistema</a>
-        </li>
-      </ul>
-    </li>
-  </div>
+        <ul class="list_show">
+          <li class="list_inside">
+            <a href="#" class="nav_link nav_link-inside"
+              >Usuarios por Sistema</a
+            >
+          </li>
+        </ul>
+      </li>
+    </div>
     <!-- ok -->
 
-<div>
-  <!-- <div class="linea"></div> -->
+    <div>
+      <!-- <div class="linea"></div> -->
 
-  <div class="modo-oscuro">
-    <div class="info">
-      <!-- list_arrow A CAMBIARLE DE COLOR A BLANCO -->
-      <mat-icon class="icon-list list_arrow" svgIcon="dark_mode"></mat-icon>
-      <span>Dark Mode</span>
-    </div>
-    <div class="switch" (click)="toggleDarkMode()">
-      <div class="base">
-        <div class="circulo"></div>
+      <div class="modo-oscuro">
+        <div class="info">
+          <!-- list_arrow A CAMBIARLE DE COLOR A BLANCO -->
+          <mat-icon class="icon-list list_arrow" svgIcon="dark_mode"></mat-icon>
+          <span>Dark Mode</span>
+        </div>
+        <div class="switch" (click)="toggleDarkMode()">
+          <div class="base">
+            <div class="circulo"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="usuario">
+        <div class="usuario-img">
+          <img src="assets/img/user.png" />
+        </div>
+        <div class="info-usuario">
+          <!-- <div class="container-datos"> -->
+          <span class="nombre">Angis</span>
+          <span class="area-usuario">T.I</span>
+        </div>
+        <div class="usuario-icon">
+          <mat-icon svgIcon="exit_door"></mat-icon>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="usuario">
-    <img src="assets/img/user.png" />
-    <div class="info-usuario">
-      <div class="container-datos">
-        <span class="nombre">Angis</span>
-        <span class="area-usuario">T.I</span>
-      </div>
-      <mat-icon svgIcon="ellipsis_vertical_solid"></mat-icon>
-      <i> <mat-icon svgIcon="icon_pwd_on"></mat-icon></i>
-    </div>
-  </div>
-
-
-</div>
   </ul>
 </nav>
+
