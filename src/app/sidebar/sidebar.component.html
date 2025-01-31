@@ -13,6 +13,8 @@
       <span>UMC</span>
     </div>
 
+
+    <div class="contenedor-item">
     <li class="list_item list_item-click">
       <div class="list_button list_button-click" (click)="toggleList($event)">
         <mat-icon svgIcon="mantenimiento" class="list_img"></mat-icon>
@@ -76,33 +78,38 @@
         </li>
       </ul>
     </li>
+  </div>
     <!-- ok -->
 
-    <div class="linea"></div>
+<div>
+  <!-- <div class="linea"></div> -->
 
-    <div class="modo-oscuro">
-      <div class="info">
-        <!-- list_arrow A CAMBIARLE DE COLOR A BLANCO -->
-        <mat-icon class="icon-list list_arrow" svgIcon="dark_mode"></mat-icon>
-        <span>Dark Mode</span>
-      </div>
-      <div class="switch" (click)="toggleDarkMode()">
-        <div class="base">
-          <div class="circulo"></div>
-        </div>
+  <div class="modo-oscuro">
+    <div class="info">
+      <!-- list_arrow A CAMBIARLE DE COLOR A BLANCO -->
+      <mat-icon class="icon-list list_arrow" svgIcon="dark_mode"></mat-icon>
+      <span>Dark Mode</span>
+    </div>
+    <div class="switch" (click)="toggleDarkMode()">
+      <div class="base">
+        <div class="circulo"></div>
       </div>
     </div>
+  </div>
 
-    <div class="usuario">
-      <img src="assets/img/user.png" />
-      <div class="info-usuario">
-        <div class="container-datos">
-          <span class="nombre">Angis</span>
-          <span class="area-usuario">T.I</span>
-        </div>
-        <mat-icon svgIcon="ellipsis_vertical_solid"></mat-icon>
-        <i> <mat-icon svgIcon="icon_pwd_on"></mat-icon></i>
+  <div class="usuario">
+    <img src="assets/img/user.png" />
+    <div class="info-usuario">
+      <div class="container-datos">
+        <span class="nombre">Angis</span>
+        <span class="area-usuario">T.I</span>
       </div>
+      <mat-icon svgIcon="ellipsis_vertical_solid"></mat-icon>
+      <i> <mat-icon svgIcon="icon_pwd_on"></mat-icon></i>
     </div>
+  </div>
+
+
+</div>
   </ul>
 </nav>
